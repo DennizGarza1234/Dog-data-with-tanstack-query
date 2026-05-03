@@ -1,16 +1,65 @@
-# React + Vite
+# Dog Breed Explorer App (TanStack Query)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+This project is a React application built with Vite and TanStack Query.  
+It fetches data from the Dog API and displays:
+- List of dog breeds
+- Detailed breed information
+- Random dog facts
+- Dog group information
 
-Currently, two official plugins are available:
+## Features
+- Fetch all dog breeds using TanStack Query
+- Click a breed to view detailed information
+- Fetch and display random dog facts
+- Fetch and display dog groups
+- Loading, error, and success states handled properly
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## API Used
+https://dogapi.dog/api/v2
 
-## React Compiler
+Endpoints:
+- /breeds
+- /breeds/{id}
+- /facts
+- /groups
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## How to Run the Project
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 1. Install dependencies
+npm install
+
+### 2. Start development server
+npm run dev
+
+### 3. Open in browser
+http://localhost:5173
+
+---
+
+## Testing
+
+### Normal Test Cases
+1. Load app → breeds list appears
+2. Click a breed → breed details display
+3. Scroll → facts and groups load correctly
+
+### Edge Test Cases
+1. API failure → error message displays
+2. Slow internet → loading state shows spinner/text
+3. Invalid breed selection → fallback message appears
+
+---
+
+## Tech Stack
+- React
+- Vite
+- TanStack Query
+- JavaScript
+- CSS
+
+---
+
+## Youtube
